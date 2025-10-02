@@ -1,0 +1,86 @@
+body {
+  background-color: #121212;
+  min-height: 100vh;
+  min-width: 100vh;
+}
+/*
+this part of the css makes he scrollbar a nigger
+*/
+html {
+  scroll-behavior: smooth;
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: var(--border);
+    border-radius: 4px;
+    border: 2px solid transparent;
+    background-clip: content-box;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: var(--hoverAndBorder);
+  }
+
+  ::-webkit-scrollbar-track {
+    background-color: var(--surface);
+    border-radius: 4px;
+  }
+
+  scrollbar-width: thin;
+  scrollbar-color: var(--border) var(--surface);
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--border) var(--surface);
+}
+
+:root {
+  --bg: #121212;
+  --text: #e0e0e0;
+  --input: #1e1e1e;
+  --primary: #ff9800;
+  --surface: #1a1a1a;
+  --primaryHover: #e68900;
+  --hover: #2a2a2a;
+  --border: #333333;
+  --primary-text: #000000;
+  --error: #ef5350;
+  --errorHover: #d32f2f;
+  --secondary: #64b5f6;
+  --secondaryHover: #42a5f5;
+  --info: #4dd0e1;
+  --infoHover: #26c6da;
+  --success: #81c784;
+  --successHover: #66bb6a;
+  --warning: #ffb74d;
+  --warningHover: #ffa726;
+}
+
+/* this is hte end of said part
+*/
+
+.label,
+.minilabel {
+  color: white;
+  text-align: center;
+  font-family: monospace;
+}
+
+.label {
+  margin-bottom: 0;
+}
+
+.topbar {
+  background-color: var(--hover);
+  margin: 0px;
+  border-radius: 20px;
+  padding-bottom: 5px;
+}
+
+span {
+  color: white;
+}
